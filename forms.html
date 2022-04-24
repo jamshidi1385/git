@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>forms</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body dir="rtl" bgcolor="#ffffff">
+            <fieldset>
+                <legend>خوش آمد گویی</legend>
+                <h1 align="center">به سایت تائمین اجتماعی ایران خوش آمدید</h1>
+            </fieldset>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <fieldset id="header">
+                    <legend>مشخصات</legend>
+                    <p>نام کاربری</p>
+                <input type="text" name="username" required="riquired" placeholder="نام کاربری">
+                <p>شماره تلفن</p>
+                <input type="text" name="phone number" required="riquired" placeholder=".........09" maxlength="11">
+                <p>ایمیل</p>
+                <input type="email" name="email" placeholder="example@gmail.com">
+                <p>انتخاب عکس</p>
+                <input type="file" name="avatar">
+                <p>آدرس وبسایت</p>
+                <input type="url" name="url" placeholder="https://..example">
+                <p>تاریخ</p>
+                <input type="datetime-local" name="date">                              
+                <p>انتخاب رنگ</p>
+                <input type="color" name="color">
+                <p>کلمه عبور</p>
+                <input type="password" name="password" placeholder="کلمه عبور:مثلا1.2.3.4.5" maxlength="6">
+                <p>مهارت</p>
+                <textarea id="footer" name="description" cols="60" rows="10" placeholder="مهارت های خود را بنویسید"></textarea>
+                <br>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>علاقه مندی ها</legend>
+                    <label for="programingcheckbox">برنامه نویسی</label><input type="checkbox" name="interests" value="programing" id="programingcheckbox">
+                    <label for="webdesign">طراحی سایت</label><input type="checkbox" name="interests" value="webdesign" id="webdesign">
+                    <br>
+                    <label for="editimage">طراحی عکس</label><input type="checkbox" name="interests" value="editimage" id="editimage">
+                    <label for="powerpoint">پاورپوینت</label><input type="checkbox" name="interests" value="powerpoint" id="powerpoint">
+                </fieldset>
+                <fieldset>
+                    <legend>نوع کاربری</legend>
+                    <label for="blank user">کاربر عادی</label><input type="radio" name="user type" value="blank user" id="blank user">
+                    <br>
+                    <label for="bronz">کاربر برنز</label><input type="radio" name="user type" value="bronz" id="bronz">
+                    <br>
+                    <label for="silver">کاربر نقره</label><input type="radio" name="user type" value="silver" id="silver">
+                    <br>
+                    <label for="gold">کاربر طلائی</label><input type="radio" name="user type" value="gold" id="gold">
+                </fieldset>
+                <br>
+                <p>جنسیت:</p>
+                <select name="gender">
+                    <option value="khali"></option>
+                    <optgroup label="جنسیت"></optgroup>
+                    <option value="male">مرد</option>
+                    <option value="female">زن</option>
+                    <option value="custom">نامشخص</option>
+                    <optgroup label="تابعیت"></optgroup>
+                    <option value="iranian">ایرانی</option>
+                    <option value="american">آمریکایی</option>
+                </select>
+                <br>
+                <br>
+                <input type="submit" value="ثبت نام">
+                <input type="reset" value="پاک کردن فرم">
+            </form>
+    </body>
+</html>
